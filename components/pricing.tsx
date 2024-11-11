@@ -1,7 +1,7 @@
-import { Check, Phone } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -24,9 +24,9 @@ export default function PricingPage() {
             pest-free home. No hidden fees, no surprises – just effective pest
             control at a price that makes sense.
           </p>
-          <Button className=" bg-white text-black hover:bg-slate-200">
+          {/* <Button className=" bg-white text-black hover:bg-slate-200">
             Call Now <Phone className="h-4 w-4" />
-          </Button>
+          </Button> */}
         </div>
         <div className="">
           <Card className="w-full max-w-md">

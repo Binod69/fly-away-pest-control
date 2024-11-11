@@ -28,175 +28,22 @@ const Footer = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900">About Us</p>
-
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    Company History
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Meet the Team{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    Employee Handbook
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Careers{' '}
-                  </a>
-                </li>
-              </ul>
             </div>
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900">Our Services</p>
-
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    Web Development
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Web Design{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Marketing{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Google Ads{' '}
-                  </a>
-                </li>
-              </ul>
             </div>
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900">Resources</p>
-
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Online Guides{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    Conference Notes
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Forum{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Downloads{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    Upcoming Events
-                  </a>
-                </li>
-              </ul>
             </div>
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900">Helpful Links</p>
-
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    FAQs{' '}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {' '}
-                    Support{' '}
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
 
-          <div className="mt-16">
+          <div className="mt-5">
             <ul className="flex justify-center gap-6 sm:justify-end">
               <li>
                 <Link
