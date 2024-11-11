@@ -13,7 +13,7 @@ import {
 export default function PricingPage() {
   return (
     <>
-      <div className="grid mx-[2%] grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 bg-[#C10055] rounded-lg p-5">
+      <div className="grid mx-[2%] grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 bg-[#C10055] rounded-lg p-6">
         <div>
           <h2 className=" text-white font-plarfairDisplay font-medium text-5xl my-4">
             Get Rid of Pests, Not Your Savings
@@ -42,7 +42,7 @@ export default function PricingPage() {
               /only
             </span> */}
               </CardTitle>
-              <CardDescription>Per Treatment</CardDescription>
+              <CardDescription>Only</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2">

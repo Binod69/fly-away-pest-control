@@ -8,7 +8,7 @@ const HomePage = () => {
 
   return (
     <>
-      <header className="h-[100%] m-[96] mx-[2%]">
+      <header className="mx-[2%]">
         <section className=" flex flex-col mx-auto  md:flex-row justify-between items-center">
           <article className="md:w-[50%] ">
             <p className=" leading-relaxed  text-xl  md:text-start md:text-xl text-textColor font-light font-poppins">

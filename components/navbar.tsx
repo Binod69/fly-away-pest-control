@@ -1,6 +1,8 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import {
@@ -12,13 +14,12 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { Menu, Phone } from 'lucide-react';
-import Image from 'next/image';
 
 const navigationItems = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'About', href: '#about' },
+  { name: 'Services', href: '#services' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const Navbar = () => {

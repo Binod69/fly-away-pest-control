@@ -9,20 +9,20 @@ const Footer = () => {
     <>
       <footer>
         <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-4 rounded-lg bg-[#972F7C] p-6 shadow-lg sm:flex-row sm:justify-between">
+          <div className="flex flex-col items-center gap-4 rounded-lg bg-[#972F7C] p-6  sm:flex-row sm:justify-between">
             <strong className="text-xl text-white sm:text-xl">
               {' '}
               Give Us a Call
             </strong>
 
-            <a
+            <Link
               className="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-black hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
               href="#"
             >
               <span className="text-sm font-medium"> Call Now</span>
 
               <Phone className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
