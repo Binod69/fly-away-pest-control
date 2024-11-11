@@ -14,6 +14,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { Menu, Phone } from 'lucide-react';
+import CallNowBtn from './ui/call-now';
 
 const navigationItems = [
   { name: 'Home', href: '/' },
@@ -85,18 +86,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button
-              asChild
-              className="transform hover:scale-105 transition-all duration-200 hover:shadow-md hover:bg-[#D54B39] bg-brand group"
-            >
-              <a
-                href={`tel:${phoneNumber}`}
-                className="flex items-center gap-2"
-              >
-                <Phone className="h-4 w-4 group-hover:animate-pulse" />
-                <span>Call Now</span>
-              </a>
-            </Button>
+            <CallNowBtn className="inline-flex items-center gap-2 rounded-full border border-[#CE1415] bg-white px-8 py-3 text-black hover:border-[#C10055] focus:outline-none focus:ring active:bg-white/90" />
           </div>
 
           {/* Mobile Navigation */}

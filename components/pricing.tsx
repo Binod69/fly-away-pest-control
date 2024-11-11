@@ -1,7 +1,6 @@
 import { Check } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
-// import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -15,34 +14,34 @@ export default function PricingPage() {
     <>
       <div className="grid mx-[2%] grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 bg-[#C10055] rounded-lg p-6">
         <div>
-          <h2 className=" text-white font-plarfairDisplay font-medium text-5xl my-4">
+          <h2 className=" text-white font-plarfairDisplay font-medium text-3xl md:text-5xl my-4">
             Get Rid of Pests, Not Your Savings
           </h2>
-          <p className="text-white my-4">
+          <p className="text-white my-4 font-poppins">
             Professional pest control shouldn&apos;t break the bank. Our
             straightforward $99 treatment plan gives you peace of mind and a
             pest-free home. No hidden fees, no surprises – just effective pest
             control at a price that makes sense.
           </p>
-          {/* <Button className=" bg-white text-black hover:bg-slate-200">
-            Call Now <Phone className="h-4 w-4" />
-          </Button> */}
         </div>
         <div className="">
           <Card className="w-full max-w-md">
             <CardHeader>
               <div className="flex justify-between items-center">
-                <Badge variant="secondary" className="text-sm font-medium">
+                <Badge
+                  variant="secondary"
+                  className="text-sm font-medium font-poppins"
+                >
                   Complete Protection Plan
                 </Badge>
               </div>
-              <CardTitle className="text-5xl font-bold">
+              <CardTitle className="text-5xl font-bold font-poppins">
                 $99
-                {/* <span className="text-xl font-normal text-muted-foreground">
-              /only
-            </span> */}
+                <span className="text-xl font-normal text-muted-foreground">
+                  /only
+                </span>
               </CardTitle>
-              <CardDescription>Only</CardDescription>
+              <CardDescription>T & C applied*</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2">
@@ -54,8 +53,8 @@ export default function PricingPage() {
                   'Common pest coverage included',
                 ].map((feature) => (
                   <li key={feature} className="flex items-center">
-                    <Check className="h-5 w-5 text-primary mr-2" />
-                    <span>{feature}</span>
+                    <Check className="h-4 w-4 text-primary mr-2" />
+                    <span className="font-poppins">{feature}</span>
                   </li>
                 ))}
               </ul>

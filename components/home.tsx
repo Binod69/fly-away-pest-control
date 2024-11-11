@@ -1,43 +1,28 @@
 import Image from 'next/image';
-import { Phone } from 'lucide-react';
 
-import { Button } from './ui/button';
+import CallNowBtn from './ui/call-now';
 
 const HomePage = () => {
-  const phoneNumber = '+1234567890';
-
   return (
     <>
       <header className="mx-[2%]">
         <section className=" flex flex-col mx-auto  md:flex-row justify-between items-center">
           <article className="md:w-[50%] ">
-            <p className=" leading-relaxed  text-xl  md:text-start md:text-xl text-textColor font-light font-poppins">
+            <p className=" leading-relaxed  text-lg  md:text-start md:text-xl text-textColor font-light font-poppins">
               Best Pest Control In Town
             </p>
             <h1 className=" md:text-start font-plarfairDisplay  text-3xl  md:text-6xl font-bold md:max-w-[100%] my-2 md:my-5">
               Safeguard Your Property with Industry-Leading Pest Control
             </h1>
-            <p className="  md:text-start text-sm md:text-lg md:max-w-[92%] text-textColor opacity-70">
+            <p className="font-poppins  md:text-start text-base md:text-lg md:max-w-[92%] text-textColor opacity-70">
               We deliver comprehensive pest control solutions that safeguard
               your property and peace of mind. Our certified technicians use
               advanced, eco-friendly methods to eliminate current infestations
               and prevent future ones.
             </p>
+            <CallNowBtn className="hidden md:inline-flex mt-5  items-center gap-2 rounded-sm  bg-[#CE1415] px-16 py-5 text-white hover:border-[#C10055] focus:outline-none focus:ring active:bg-white/90" />
 
-            <Button
-              size={'lg'}
-              asChild
-              className="hidden w-[25%] md:flex transform hover:scale-105 transition-all duration-200 hover:shadow-md hover:bg-[#D54B39] bg-brand text-white group mt-9"
-            >
-              <a
-                href={`tel:${phoneNumber}`}
-                className="flex items-center gap-2"
-              >
-                <Phone className="h-4 w-4 group-hover:animate-pulse" />
-                <span>Call Now</span>
-              </a>
-            </Button>
-            <p className="hidden md:block text-center  md:text-start text-sm md:text-lg md:max-w-[92%] text-textColor opacity-60 mt-2">
+            <p className="hidden md:block text-center font-poppins  md:text-start text-sm md:text-sm md:max-w-[92%] text-textColor opacity-60 mt-2">
               24/7 Emergency Service
             </p>
           </article>
@@ -50,17 +35,9 @@ const HomePage = () => {
               loading="lazy"
             />
           </div>
-          <Button
-            asChild
-            className="md:hidden w-[100%] transform hover:scale-105 transition-all duration-200 hover:shadow-md hover:bg-[#D54B39] bg-brand text-white group mt-9"
-          >
-            <a href={`tel:${phoneNumber}`} className="flex items-center gap-2">
-              <Phone className="h-4 w-4 group-hover:animate-pulse" />
-              <span>Call Now</span>
-            </a>
-          </Button>
+          <CallNowBtn className=" inline-flex  w-[100%]  md:hidden  mt-5  items-center justify-center gap-2 rounded-sm  bg-[#CE1415] px-16 py-5 text-white hover:border-[#C10055] focus:outline-none focus:ring active:bg-white/90" />
 
-          <p className="md:hidden text-center  md:text-start text-sm md:text-lg md:max-w-[92%] text-textColor opacity-60 mt-2">
+          <p className="md:hidden font-poppins text-center  md:text-start text-sm md:text-lg md:max-w-[92%] text-textColor opacity-75 mt-2">
             24/7 Emergency Service
           </p>
         </section>

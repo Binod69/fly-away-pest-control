@@ -7,9 +7,7 @@ import {
   Building2,
   TreeDeciduous,
   Shield,
-  Calendar,
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const ServicesSection = () => {
   const services = [
@@ -87,12 +85,12 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-16 my-10">
+    <div className="w-full max-w-6xl mx-auto px-4 py-16 my-10" id="services">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-plarfairDisplay font-bold mb-4">
           Professional Pest Control Services
         </h2>
-        <p className="text-sm md:text-lg text-textColor opacity-70 max-w-3xl mx-auto">
+        <p className="text-sm font-poppins md:text-lg text-textColor opacity-70 max-w-3xl mx-auto">
           We offer comprehensive pest control solutions tailored to your
           specific needs. Our expert technicians use the latest techniques and
           environmentally responsible products to keep your space pest-free.
@@ -108,16 +106,20 @@ const ServicesSection = () => {
             <CardHeader>
               <div className="flex items-center mb-4">
                 <service.icon className="h-8 w-8 text-[#2F4858] mr-3" />
-                <h3 className="text-xl font-bold">{service.title}</h3>
+                <h3 className="text-xl font-bold font-plarfairDisplay">
+                  {service.title}
+                </h3>
               </div>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 font-poppins">
+                {service.description}
+              </p>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
-                    <Shield className="h-5 w-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>{feature}</span>
+                    <Shield className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="font-poppins">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -128,17 +130,19 @@ const ServicesSection = () => {
 
       <div className="mt-16 text-center">
         <div className="max-w-2xl mx-auto mb-8">
-          <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
-          <p className="text-lg text-gray-600 mb-8">
+          <h3 className="text-2xl font-bold mb-4 font-plarfairDisplay">
+            Ready to Get Started?
+          </h3>
+          <p className="text-lg text-gray-600 mb-8 font-poppins">
             Schedule your inspection today and take the first step towards a
             pest-free environment.
           </p>
-          <div className="flex justify-center gap-4">
+          {/* <div className="flex justify-center gap-4">
             <Button className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
               Schedule Service
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
